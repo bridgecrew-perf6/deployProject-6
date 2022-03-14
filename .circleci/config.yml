@@ -22,7 +22,7 @@ workflows:
     jobs:
       - node/test:
           version: "15.1"
-          app-dir: "~/project/deployProject"
+          app-dir: "~/project/udagram"
           # after the node/test job completes, build the dist packages and save them to a workspace
           post-steps:
             - run: npm run build
@@ -30,3 +30,4 @@ workflows:
                 from: dist/
                 to: s3://deployproject-bucket
                 arguments: --recursive
+      
