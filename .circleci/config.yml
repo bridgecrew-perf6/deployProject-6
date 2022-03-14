@@ -22,6 +22,7 @@ workflows:
     jobs:
       - node/test:
           version: "15.1"
+          app-dir: "~/project/deployProject"
           # after the node/test job completes, build the dist packages and save them to a workspace
           post-steps:
             - run: npm run build
