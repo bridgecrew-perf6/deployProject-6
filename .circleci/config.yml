@@ -18,16 +18,16 @@ jobs:
       # install dependencies in both apps
       - run:
           name: Front End install
-          command: |
+          command:
               npm run frontend:install
           name: Backend install
-            command: |
+            command:
                 npm run backend:install
           name: Frontend build
-              command: |
+              command:
                   npm run frontend:build
           name: BackEnd install
-              command: |
+              command:
                   npm run backend:build
 
 
