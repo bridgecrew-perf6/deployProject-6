@@ -1,1 +1,1 @@
-aws s3 cp --recursive public-read ./build s3://deployproject-bucket/
+aws s3 cp --recursive public-read ./www s3://deployproject-bucket/
