@@ -1,1 +1,1 @@
-aws s3 cp --recursive --acl public-read ./www s3://deployproject-bucket/
+aws s3 cp --recursive --acl public-read ./www s3://udagram-bucket-thegux/
