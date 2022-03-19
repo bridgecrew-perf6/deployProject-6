@@ -1,4 +1,5 @@
-# Udagram
+# Udagram 
+[![thegux](https://circleci.com/gh/thegux/deployProject.svg?style=svg)](https://app.circleci.com/pipelines/github/thegux/deployProject)
 
 This application was provided by Udacity, as a starter project for the Udacity's Javascript nanodegree course. Udagram is an application whose purpose is to allow users to create posts and share with other people.
 
