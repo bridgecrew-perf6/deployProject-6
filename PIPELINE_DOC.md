@@ -18,13 +18,14 @@ Please Configure the following environment variables in your circle CI project:
 - AWS_SECRET_ACCESS_KEY
 - AWS_ACCESS_KEY
 - AWS_REGION
+- 
+### Environment Config Screenshot
+<img width="488" alt="image" src="https://user-images.githubusercontent.com/60764149/159125927-1e9fa795-d107-4fe1-8dcf-ff12b31de5d3.png">
 
 ## CIRLECI
-<img width="816" alt="image" src="https://user-images.githubusercontent.com/60764149/159112674-d3c873ac-544f-4a3a-9f6f-31db9c442c98.png">
-<img width="798" alt="image" src="https://user-images.githubusercontent.com/60764149/159111795-80291643-b1d7-4da3-ad01-9bf5850d663f.png">
+<img width="624" alt="image" src="https://user-images.githubusercontent.com/60764149/159125838-9d57ece5-fb53-4b88-a9ef-9b26c4d3421e.png">
+<img width="659" alt="image" src="https://user-images.githubusercontent.com/60764149/159125865-eb97d9bb-88ae-4285-a240-3b0f33ac0fff.png">
 
-### Environment Config Screenshot
-<img width="953" alt="image" src="https://user-images.githubusercontent.com/60764149/159112713-c9fe0aea-eabd-40d1-9a25-cd3f307335d0.png">
 
 ### Pipeline's Overview Diagram
 ![AWS (2019) horizontal framework](https://user-images.githubusercontent.com/60764149/159111993-8b97c3cc-85bf-4516-9b1c-2c7d8ee78764.jpeg)
