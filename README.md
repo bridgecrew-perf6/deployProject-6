@@ -56,6 +56,22 @@ Unit tests are using the Jasmine Framework.
 
 The e2e tests are using Protractor and Jasmine.
 
+## Service Health Status
+
+### Elastic Beanstalk
+<img width="654" alt="image" src="https://user-images.githubusercontent.com/60764149/159109410-cab685cc-ac98-4c74-a3b7-78a5ea414fca.png">
+
+### RDS
+<img width="873" alt="image" src="https://user-images.githubusercontent.com/60764149/159109524-58fbd916-ce20-4a1b-8e64-0b7fcda0811b.png">
+
+### S3 (though public, stable and healthy)
+<img width="861" alt="image" src="https://user-images.githubusercontent.com/60764149/159109555-3840406c-ec7d-4f8d-a758-28b1de6b20ff.png">
+
+### CIRLECI
+<img width="425" alt="image" src="https://user-images.githubusercontent.com/60764149/159109594-82736b55-199e-44c6-b87a-44cce592eb5a.png">
+<img width="307" alt="image" src="https://user-images.githubusercontent.com/60764149/159109603-432a8022-e05b-4180-83e9-b2c21bb47946.png">
+
+
 ## Built With
 
 - [Angular](https://angular.io/) - Single Page Application Framework
