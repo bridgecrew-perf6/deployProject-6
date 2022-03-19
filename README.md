@@ -72,6 +72,21 @@ The e2e tests are using Protractor and Jasmine.
 <img width="307" alt="image" src="https://user-images.githubusercontent.com/60764149/159109603-432a8022-e05b-4180-83e9-b2c21bb47946.png">
 
 
+## Environment variables
+POSTGRES_USERNAME
+POSTGRES_PASSWORD
+POSTGRES_DBPOSTGRES_DB
+PORT
+POSTGRES_HOST
+AWS_REGION
+AWS_PROFILE
+AWS_BUCKET
+AWS_ACCESS_KEY
+URL
+JWT_SECRET
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+
 ## Built With
 
 - [Angular](https://angular.io/) - Single Page Application Framework
