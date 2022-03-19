@@ -73,6 +73,10 @@ The e2e tests are using Protractor and Jasmine.
 <img width="307" alt="image" src="https://user-images.githubusercontent.com/60764149/159109603-432a8022-e05b-4180-83e9-b2c21bb47946.png">
 
 
+## Infrastructure Overview Diagram
+![UDAGRAM'S INFRASTRUCTURE OVERVIEW](https://user-images.githubusercontent.com/60764149/159110432-b6450ba3-9b14-4e34-957e-6e9ab11b324f.jpeg)
+
+
 ## Environment variables
 - POSTGRES_USERNAME
 - POSTGRES_PASSWORD
