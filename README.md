@@ -65,8 +65,12 @@ The database of this project was generated using RDS, an AWS service that provid
 The pipeline was constructed using Circle CI. It consists of simple steps, such as: installing dependencies, building steps and deployment steps. To view all of the mentioned steps, please check the images listed below.
 
 ### CIRLECI
-<img width="425" alt="image" src="https://user-images.githubusercontent.com/60764149/159109594-82736b55-199e-44c6-b87a-44cce592eb5a.png">
+<img width="816" alt="image" src="https://user-images.githubusercontent.com/60764149/159112674-d3c873ac-544f-4a3a-9f6f-31db9c442c98.png">
 <img width="798" alt="image" src="https://user-images.githubusercontent.com/60764149/159111795-80291643-b1d7-4da3-ad01-9bf5850d663f.png">
+
+#### Environment Config Screenshot
+<img width="953" alt="image" src="https://user-images.githubusercontent.com/60764149/159112713-c9fe0aea-eabd-40d1-9a25-cd3f307335d0.png">
+
 
 ### Pipeline's Overview Diagram
 ![AWS (2019) horizontal framework](https://user-images.githubusercontent.com/60764149/159111993-8b97c3cc-85bf-4516-9b1c-2c7d8ee78764.jpeg)
@@ -81,13 +85,15 @@ The pipeline was constructed using Circle CI. It consists of simple steps, such 
 - AWS_REGION
 - AWS_PROFILE
 - AWS_BUCKET
-- AWS_ACCESS_KEY
 - URL
 - JWT_SECRET
-
-Configure these on your CI/CD platform:
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
+- AWS_ACCESS_KEY
+- AWS_REGION
+
+Configure the variables in your EB environment.
+Configure the last four variables also on your CI/CD platform.
 
 ## Built With
 
