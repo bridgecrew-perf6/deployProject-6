@@ -20,6 +20,10 @@ jobs:
       - aws-cli/setup
       - eb/setup
       - run:
+          name: Setup Environment Variables
+          command: |
+            npm run setup:env
+      - run:
           name: Front-End Install
           command: |
             npm run frontend:install
