@@ -20,10 +20,10 @@ Please Configure the following environment variables in your circle CI project:
 - AWS_REGION
 - 
 ### Environment Config Screenshot
-<img width="521" alt="image" src="https://user-images.githubusercontent.com/60764149/159125964-197cdd25-4b60-4f05-8bcc-69bf333e082c.png">
+<img width="491" alt="image" src="https://user-images.githubusercontent.com/60764149/159126007-65ae8311-104c-4d85-99a2-ba15e32ae121.png">
 
 ## CIRLECI
-<img width="624" alt="image" src="https://user-images.githubusercontent.com/60764149/159125838-9d57ece5-fb53-4b88-a9ef-9b26c4d3421e.png">
+<img width="521" alt="image" src="https://user-images.githubusercontent.com/60764149/159125964-197cdd25-4b60-4f05-8bcc-69bf333e082c.png">
 <img width="659" alt="image" src="https://user-images.githubusercontent.com/60764149/159125865-eb97d9bb-88ae-4285-a240-3b0f33ac0fff.png">
 
 
