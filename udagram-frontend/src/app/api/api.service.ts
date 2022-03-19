@@ -34,6 +34,8 @@ export class ApiService {
 
   get(endpoint): Promise<any> {
     const url = `${API_HOST}${endpoint}`;
+    console.log(url);
+    console.log(this.http.get(url, this.httpOptions))
     const req = this.http.get(url, this.httpOptions).pipe(map(ApiService.extractData));
 
     return req
@@ -55,7 +57,7 @@ export class ApiService {
   }
 
   async upload(endpoint: string, file: File, payload: any): Promise<any> {
-      console.log("got to upload")
+    console.log("got to upload")
     const signed_url = (await this.get(`${endpoint}/signed-url/${file.name}`)).url;
     console.log('signed url', signed_url);
     const headers = new HttpHeaders({'Content-Type': file.type});
