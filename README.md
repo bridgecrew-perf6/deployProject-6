@@ -59,7 +59,7 @@ The database of this project was generated using RDS, an AWS service that provid
 <img width="861" alt="image" src="https://user-images.githubusercontent.com/60764149/159109555-3840406c-ec7d-4f8d-a758-28b1de6b20ff.png">
 
 #### Infrastructure Overview Diagram
-![UDAGRAM'S INFRASTRUCTURE OVERVIEW](https://user-images.githubusercontent.com/60764149/159110432-b6450ba3-9b14-4e34-957e-6e9ab11b324f.jpeg)
+![UDAGRAM'S INFRASTRUCTURE OVERVIEW](https://user-images.githubusercontent.com/60764149/159112463-534a76ad-3e22-440b-a5e7-f038ca9a9c1a.jpeg)
 
 ## Pipeline
 The pipeline was constructed using Circle CI. It consists of simple steps, such as: installing dependencies, building steps and deployment steps. To view all of the mentioned steps, please check the images listed below.
