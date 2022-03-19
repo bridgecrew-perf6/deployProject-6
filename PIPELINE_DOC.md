@@ -18,7 +18,7 @@ Please Configure the following environment variables in your circle CI project:
 - AWS_SECRET_ACCESS_KEY
 - AWS_ACCESS_KEY
 - AWS_REGION
-- 
+
 ### Environment Config Screenshot
 <img width="491" alt="image" src="https://user-images.githubusercontent.com/60764149/159126007-65ae8311-104c-4d85-99a2-ba15e32ae121.png">
 
