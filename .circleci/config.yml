@@ -9,8 +9,17 @@ orbs:
   node: circleci/node@5.0.1
   aws-cli: circleci/aws-cli@1.3.1
   eb: circleci/aws-elastic-beanstalk@1.0.0
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build_and_deploy
+        filters:
+          branches:
+            only:
+              - master
 jobs:
-  build:
+  build_and_deploy:
     docker:
       - image: "cimg/base:stable"
     steps:
@@ -43,13 +52,4 @@ jobs:
           name: Deploy Backend
           command:
             npm run backend:deploy
-workflows:
-  version: 2
-  build_and_deploy:
-    jobs:
-      - build
-        filters:
-          branches:
-            only:
-              - master
 
