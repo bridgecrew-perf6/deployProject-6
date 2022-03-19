@@ -13,31 +13,14 @@ http://udagram-api-thegux-dev.us-east-1.elasticbeanstalk.com/api/v0
 
 ### To run this project on your own
 To get started, first notice that both the frontend and backend are located in this repository. To build this project properly, you must:
-1- Make sure you have Node (>= @14.15.1 version), npm (>= @6.14.8), Angular CLI, AWS CLI v2 and Eb CLI installed.
-2- Create an environmet using EBS and associate the api with it, then run:
-```
-eb deploy
-```
-3- Configure and RDS for running the database and an S3 bucket 
-4- Configure a bucket for hosting post pictures
-5- Update your deploy.sh with your bucket name, navigate to your root directory and run:
-```
-npm run deploy
-```
-6- Setup environmemt variables listed at the ENV Variables section of this readme in your CI and also in your EBS.
-7- Install the dependencies:
-```
-npm run frontend:install && npm run backend:install
-```
 
-8- To start this project locally, you'll need to use a linux terminal or git-bash (for windows users), then run:
-```
-cd udagram-api && npm run dev
-```
-Then open another terminal and run:
-```
-cd udagram-frontend && npm run start
-```
+1. Make sure you have Node (>= @14.15.1 version), npm (>= @6.14.8), Angular CLI, AWS CLI v2 and Eb CLI installed.
+2. Create an environment using AWS Eb and associate the udagram-api with it (Please, remember to initiate elastic beanstalk using eb init)
+3. Configure and RDS for running the database and an S3 bucket 
+4. Configure a bucket for hosting post pictures
+5. Update your deploy.sh with your bucket name
+6. Setup environmemt variables listed at the ENV Variables section of this readme in your CI and also in your EBS.
+7. Commit your project and wait for the pipeline to finish. Then, access your bucket's URL.
 
 ## Testing
 
@@ -57,24 +40,36 @@ Unit tests are using the Jasmine Framework.
 
 The e2e tests are using Protractor and Jasmine.
 
-## Service Health Status
+## Infrastructure
+This projects' api uses Node JD. It was deployed to Elastic Beanstalk, an AWS service whose purpose is to allow quick deployment of applications with easy database integration steps. Elastic Beanstalk also allows you to set environment variables for your project.
 
-### Elastic Beanstalk
+The frontend of this course uses Angular. It was deployed to the Simple Storage Service (S3) provided by AWS, which is an object management service that provides a diversity of functionalities to make an application scalable, quickly available and easily protected.
+
+The database of this project was generated using RDS, an AWS service that provides easy configurable relational databases.
+
+### Service Health Status
+
+#### Elastic Beanstalk
 <img width="654" alt="image" src="https://user-images.githubusercontent.com/60764149/159109410-cab685cc-ac98-4c74-a3b7-78a5ea414fca.png">
 
-### RDS
+#### RDS
 <img width="873" alt="image" src="https://user-images.githubusercontent.com/60764149/159109524-58fbd916-ce20-4a1b-8e64-0b7fcda0811b.png">
 
-### S3 (though public, stable and healthy)
+#### S3 (though public, stable and healthy)
 <img width="861" alt="image" src="https://user-images.githubusercontent.com/60764149/159109555-3840406c-ec7d-4f8d-a758-28b1de6b20ff.png">
+
+#### Infrastructure Overview Diagram
+![UDAGRAM'S INFRASTRUCTURE OVERVIEW](https://user-images.githubusercontent.com/60764149/159112463-534a76ad-3e22-440b-a5e7-f038ca9a9c1a.jpeg)
+
+## Pipeline
+The pipeline was constructed using Circle CI. It consists of simple steps, such as: installing dependencies, building steps and deployment steps. To view all of the mentioned steps, please check the images listed below.
 
 ### CIRLECI
 <img width="425" alt="image" src="https://user-images.githubusercontent.com/60764149/159109594-82736b55-199e-44c6-b87a-44cce592eb5a.png">
-<img width="307" alt="image" src="https://user-images.githubusercontent.com/60764149/159109603-432a8022-e05b-4180-83e9-b2c21bb47946.png">
+<img width="798" alt="image" src="https://user-images.githubusercontent.com/60764149/159111795-80291643-b1d7-4da3-ad01-9bf5850d663f.png">
 
-
-## Infrastructure Overview Diagram
-![UDAGRAM'S INFRASTRUCTURE OVERVIEW](https://user-images.githubusercontent.com/60764149/159110432-b6450ba3-9b14-4e34-957e-6e9ab11b324f.jpeg)
+### Pipeline's Overview Diagram
+![AWS (2019) horizontal framework](https://user-images.githubusercontent.com/60764149/159111993-8b97c3cc-85bf-4516-9b1c-2c7d8ee78764.jpeg)
 
 
 ## Environment variables
@@ -89,6 +84,8 @@ The e2e tests are using Protractor and Jasmine.
 - AWS_ACCESS_KEY
 - URL
 - JWT_SECRET
+
+Configure these on your CI/CD platform:
 - AWS_ACCESS_KEY_ID
 - AWS_SECRET_ACCESS_KEY
 
