@@ -40,28 +40,35 @@ Unit tests are using the Jasmine Framework.
 
 The e2e tests are using Protractor and Jasmine.
 
-## Service Health Status
+## Infrastructure
+This projects' api uses Node JD. It was deployed to Elastic Beanstalk, an AWS service whose purpose is to allow quick deployment of applications with easy database integration steps. Elastic Beanstalk also allows you to set environment variables for your project.
 
-### Elastic Beanstalk
+The frontend of this course uses Angular. It was deployed to the Simple Storage Service (S3) provided by AWS, which is an object management service that provides a diversity of functionalities to make an application scalable, quickly available and easily protected.
+
+The database of this project was generated using RDS, an AWS service that provides easy configurable relational databases.
+
+### Service Health Status
+
+#### Elastic Beanstalk
 <img width="654" alt="image" src="https://user-images.githubusercontent.com/60764149/159109410-cab685cc-ac98-4c74-a3b7-78a5ea414fca.png">
 
-### RDS
+#### RDS
 <img width="873" alt="image" src="https://user-images.githubusercontent.com/60764149/159109524-58fbd916-ce20-4a1b-8e64-0b7fcda0811b.png">
 
-### S3 (though public, stable and healthy)
+#### S3 (though public, stable and healthy)
 <img width="861" alt="image" src="https://user-images.githubusercontent.com/60764149/159109555-3840406c-ec7d-4f8d-a758-28b1de6b20ff.png">
+
+#### Infrastructure Overview Diagram
+![UDAGRAM'S INFRASTRUCTURE OVERVIEW](https://user-images.githubusercontent.com/60764149/159110432-b6450ba3-9b14-4e34-957e-6e9ab11b324f.jpeg)
+
+## Pipeline
+The pipeline was constructed using Circle CI. It consists of simple steps, such as: installing dependencies, building steps and deployment steps. To view all of the mentioned steps, please check the images listed below.
 
 ### CIRLECI
 <img width="425" alt="image" src="https://user-images.githubusercontent.com/60764149/159109594-82736b55-199e-44c6-b87a-44cce592eb5a.png">
 <img width="798" alt="image" src="https://user-images.githubusercontent.com/60764149/159111795-80291643-b1d7-4da3-ad01-9bf5850d663f.png">
 
-
-
-
-## Infrastructure Overview Diagram
-![UDAGRAM'S INFRASTRUCTURE OVERVIEW](https://user-images.githubusercontent.com/60764149/159110432-b6450ba3-9b14-4e34-957e-6e9ab11b324f.jpeg)
-
-## Pipeline's Overview Diagram
+### Pipeline's Overview Diagram
 ![AWS (2019) horizontal framework](https://user-images.githubusercontent.com/60764149/159111993-8b97c3cc-85bf-4516-9b1c-2c7d8ee78764.jpeg)
 
 
