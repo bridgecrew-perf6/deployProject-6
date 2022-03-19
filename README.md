@@ -7,6 +7,7 @@ This application was provided by Udacity, as a starter project for the Udacity's
 ### To view a live demo:
 1- Full working application:
 http://udagram-bucket-thegux.s3-website-us-east-1.amazonaws.com/
+
 2- API:
 http://udagram-api-thegux-dev.us-east-1.elasticbeanstalk.com/api/v0
 
@@ -73,19 +74,19 @@ The e2e tests are using Protractor and Jasmine.
 
 
 ## Environment variables
-POSTGRES_USERNAME
-POSTGRES_PASSWORD
-POSTGRES_DBPOSTGRES_DB
-PORT
-POSTGRES_HOST
-AWS_REGION
-AWS_PROFILE
-AWS_BUCKET
-AWS_ACCESS_KEY
-URL
-JWT_SECRET
-AWS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY
+- POSTGRES_USERNAME
+- POSTGRES_PASSWORD
+- POSTGRES_DBPOSTGRES_DB
+- PORT
+- POSTGRES_HOST
+- AWS_REGION
+- AWS_PROFILE
+- AWS_BUCKET
+- AWS_ACCESS_KEY
+- URL
+- JWT_SECRET
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
 
 ## Built With
 
