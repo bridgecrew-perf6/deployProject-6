@@ -55,7 +55,8 @@ The e2e tests are using Protractor and Jasmine.
 
 ### CIRLECI
 <img width="425" alt="image" src="https://user-images.githubusercontent.com/60764149/159109594-82736b55-199e-44c6-b87a-44cce592eb5a.png">
-<img width="307" alt="image" src="https://user-images.githubusercontent.com/60764149/159109603-432a8022-e05b-4180-83e9-b2c21bb47946.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/60764149/159111778-703d0aee-594d-4dbd-b36b-67a2c24637cc.png">
+
 
 
 ## Infrastructure Overview Diagram
